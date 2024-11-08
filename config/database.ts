@@ -11,7 +11,7 @@ export default ({ env }) => {
         database: env('DATABASE_NAME', 'strap-database'),
         user: env('DATABASE_USERNAME', 'sbxlozzlxu'),
         password: env('DATABASE_PASSWORD', 'L5svtaGmWu$7X9QB'),
-        ssl: env.bool('DATABASE_SSL', true) && {
+        ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
           ca: env('DATABASE_SSL_CA', undefined),
